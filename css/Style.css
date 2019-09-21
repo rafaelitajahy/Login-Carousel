@@ -1,0 +1,55 @@
+/* Import fonts from google font*/
+@import url('https://fonts.googleapis.com/css?family=Lobster|Montserrat&display=swap');
+
+html, body {
+  height: 100%;
+  overflow: hidden;
+  background: #ffe259;
+  background: var(--mango-gradient); 
+}
+
+/* Variables */
+
+:root {
+  --primary-gradient: linear-gradient(to right, #4e4376, #2b5876);
+  --mango-gradient: linear-gradient(to right, #ffa751, #ffe259 );
+  --text-color: #f7f9f9;
+  --Montserrat: "Monstserrat",cursive;
+  --Lobster: "Lobster", cursive;
+  --primary-shadow:3px 4px 7px rgba(27,27,27,0.534);
+  --border-color: rgba(0,0,0,0.329);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 98%;
+  max-height: 610px;
+}
+
+.container .panel {
+  width: 60%;
+  height: 72%;
+  box-shadow: var(--primary-gradient);
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 65% 35%;
+  height: 100%;
+  background: #fff;
+}
+
+.liquid {
+  background: url('../assets/Wave.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.liquid h4 {
+  text-align: left;
+  padding: 0 2rem;
+  color: whitesmoke;
+  font-family: var(--Montserrat);
+}
